@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#6200EE"
+        android:text="LCM"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textNumber1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:text="자연수 입력(1)"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekNumber1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="99"
+                android:progress="0"
+                android:progressTint="#03DAC5"
+                android:thumbTint="#03DAC5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textNumber2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:text="자연수 입력(1)"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekNumber2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="99"
+                android:progress="0"
+                android:progressTint="#03DAC5"
+                android:thumbTint="#03DAC5" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="최소공배수 구하기"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:insetTop="4dp"
+            android:insetBottom="4dp"
+            app:backgroundTint="#6200EE"
+            app:cornerRadius="4dp" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="결과"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
